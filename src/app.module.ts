@@ -17,7 +17,7 @@ import configuration from './config/configuration';
         type: 'mysql',
         url: configService.get<string>('database.url'), // Toma la URL desde la config
         entities: [__dirname + '/**/*.entity{.ts,.js}'],
-        // synchronize: true, // Solo en desarrollo
+        synchronize: true, // Solo en desarrollo
       }),
       inject: [ConfigService],
     }),
