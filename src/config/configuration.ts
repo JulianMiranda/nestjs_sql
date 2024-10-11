@@ -6,4 +6,5 @@ export default () => ({
       'mysql://root:tyto_14808@localhost:3306/mydatabase',
   },
   jwtSecret: process.env.JWT_SECRET || 'defaultSecret',
+  hello: process.env.HELLO || 'Hello',
 });
