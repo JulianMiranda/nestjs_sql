@@ -18,6 +18,7 @@ async function bootstrap() {
   const configService = app.get(ConfigService);
   const port = configService.get<number>('port') || 3000;
   console.log('Listen PORT: ', port);
+  console.log('With S3: ');
 
   await app.listen(port);
 
