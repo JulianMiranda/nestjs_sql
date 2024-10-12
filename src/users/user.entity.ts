@@ -8,9 +8,6 @@ export class User {
   @Column()
   name: string;
 
-  @Column({ nullable: true })
-  image: string;
-
   @Column({ unique: true })
   username: string;
 
